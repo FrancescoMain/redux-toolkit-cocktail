@@ -44,3 +44,11 @@ export const initialState: CocktailState = {
     error: null,
     loading: false
 }
+
+export interface CocktailState {
+    cocktails: Drink[],
+    cocktail: Drink | null,
+    error: string | null,
+    loading: boolean | null
+}
+
